@@ -31,4 +31,8 @@ def update_qty(product_id: int, qty: int):
         raise ValueError('Quantity cannot be negative')
     dao.update_qty(product_id, qty)
 
+#I have replaced eval with json.loads because eval() can execute arbitrary Python code, potentially running malicious scripts 
+#if the input is compromised. json.loads() safely parses JSON strings, preventing code injection risks by strictly interpreting 
+#structured data without executing any code, m…
+
 
