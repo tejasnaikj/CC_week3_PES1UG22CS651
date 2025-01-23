@@ -48,3 +48,5 @@ def delete_cart(username: str):
     dao.delete_cart(username)
 
 
+#I have implemented list comprehension as list comprehension is more memory-efficient and Pythonic compared to traditional loop. 
+#It creates the list in a single line, reducing computational overhead and improving code readability.
